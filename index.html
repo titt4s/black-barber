@@ -1,378 +1,516 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLACK BARBER | Barbería premium</title>
-  <meta name="description" content="BLACK BARBER: barbería premium. Cortes clásicos y modernos, arreglo de barba y afeitado con toalla caliente. Reserva tu cita.">
-  <meta name="theme-color" content="#0a0a0a">
+  <head>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLACK BARBER | Barbería premium</title>
+    <meta
+      name="description"
+      content="BLACK BARBER: barbería premium. Cortes clásicos y modernos, arreglo de barba y afeitado con toalla caliente. Reserva tu cita."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
 
-  <!-- Tipografías -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Hoja de estilos (se creará en el siguiente paso) -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Hoja de estilos (se creará en el siguiente paso) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== CABECERA / NAVEGACIÓN ===================== -->
+    <header class="header" id="inicio-header">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="#inicio" class="logo" aria-label="BLACK BARBER - Inicio">
+          BLACK <span>BARBER</span>
+        </a>
 
-  <!-- ===================== CABECERA / NAVEGACIÓN ===================== -->
-  <header class="header" id="inicio-header">
-    <nav class="nav container" aria-label="Navegación principal">
-      <a href="#inicio" class="logo" aria-label="BLACK BARBER - Inicio">
-        BLACK <span>BARBER</span>
-      </a>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#galeria" class="nav__link">Galería</a></li>
+          <li><a href="#horarios" class="nav__link">Horarios</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+          <li>
+            <a href="#cita" class="btn btn--gold btn--small">Pedir cita</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul class="nav__menu" id="nav-menu">
-        <li><a href="#inicio" class="nav__link">Inicio</a></li>
-        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
-        <li><a href="#servicios" class="nav__link">Servicios</a></li>
-        <li><a href="#galeria" class="nav__link">Galería</a></li>
-        <li><a href="#horarios" class="nav__link">Horarios</a></li>
-        <li><a href="#contacto" class="nav__link">Contacto</a></li>
-        <li><a href="#cita" class="btn btn--gold btn--small">Pedir cita</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <!-- ===================== PORTADA ===================== -->
+      <section class="hero" id="inicio">
+        <img
+          class="hero__img"
+          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80"
+          alt="Barbero profesional realizando un corte de pelo en BLACK BARBER"
+        />
+        <div class="hero__overlay"></div>
 
-  <main>
+        <div class="hero__content container">
+          <p class="hero__eyebrow">Barbería premium · Desde 2012</p>
+          <h1 class="hero__title">El arte del <em>corte perfecto</em></h1>
+          <p class="hero__text">
+            Tradición, precisión y estilo en cada detalle. Vive la experiencia
+            BLACK BARBER.
+          </p>
+          <div class="hero__actions">
+            <a href="#cita" class="btn btn--gold">Solicitar cita</a>
+            <a href="#servicios" class="btn btn--outline">Ver servicios</a>
+          </div>
+        </div>
 
-    <!-- ===================== PORTADA ===================== -->
-    <section class="hero" id="inicio">
-      <img
-        class="hero__img"
-        src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80"
-        alt="Barbero profesional realizando un corte de pelo en BLACK BARBER">
-      <div class="hero__overlay"></div>
+        <a
+          href="#nosotros"
+          class="hero__scroll"
+          aria-label="Desplazarse hacia abajo"
+        >
+          <span></span>
+        </a>
+      </section>
 
-      <div class="hero__content container">
-        <p class="hero__eyebrow">Barbería premium · Desde 2012</p>
-        <h1 class="hero__title">El arte del <em>corte perfecto</em></h1>
-        <p class="hero__text">
-          Tradición, precisión y estilo en cada detalle. Vive la experiencia BLACK BARBER.
+      <!-- ===================== PRESENTACIÓN ===================== -->
+      <section class="about section" id="nosotros">
+        <div class="container about__grid">
+          <div class="about__media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
+              alt="Interior de la barbería BLACK BARBER"
+              loading="lazy"
+            />
+            <div class="about__badge">
+              <strong>12+</strong>
+              <span>años de experiencia</span>
+            </div>
+          </div>
+
+          <div class="about__content reveal">
+            <p class="section__eyebrow">Sobre nosotros</p>
+            <h2 class="section__title">
+              Más que una barbería, <em>un ritual</em>
+            </h2>
+            <p>
+              En BLACK BARBER combinamos la técnica de la barbería clásica con
+              las tendencias más actuales. Cada visita es una experiencia
+              pensada para que salgas con la mejor versión de ti mismo.
+            </p>
+            <p>
+              Nuestro equipo de barberos profesionales trabaja con productos
+              premium y herramientas de máxima precisión, en un ambiente
+              exclusivo donde el tiempo se detiene.
+            </p>
+
+            <ul class="about__stats">
+              <li><strong>5.000+</strong><span>clientes satisfechos</span></li>
+              <li><strong>4</strong><span>maestros barberos</span></li>
+              <li><strong>100%</strong><span>productos premium</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SERVICIOS Y PRECIOS ===================== -->
+      <section class="services section section--dark" id="servicios">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__eyebrow">Servicios y precios</p>
+            <h2 class="section__title">Elige tu <em>experiencia</em></h2>
+            <p class="section__subtitle">
+              Precios claros, calidad sin concesiones.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="service-card reveal">
+              <div class="service-card__icon" aria-hidden="true">✂</div>
+              <h3 class="service-card__title">Corte clásico</h3>
+              <p class="service-card__desc">
+                Corte a tijera o máquina, lavado y peinado final.
+              </p>
+              <p class="service-card__price">15 €</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon" aria-hidden="true">✂</div>
+              <h3 class="service-card__title">Degradado (fade)</h3>
+              <p class="service-card__desc">
+                Degradado de precisión con acabado perfilado.
+              </p>
+              <p class="service-card__price">18 €</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon" aria-hidden="true">🧔</div>
+              <h3 class="service-card__title">Arreglo de barba</h3>
+              <p class="service-card__desc">
+                Perfilado, recorte y cuidado con aceites premium.
+              </p>
+              <p class="service-card__price">12 €</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon" aria-hidden="true">🪒</div>
+              <h3 class="service-card__title">Afeitado con navaja</h3>
+              <p class="service-card__desc">
+                Afeitado tradicional con toalla caliente y bálsamo.
+              </p>
+              <p class="service-card__price">20 €</p>
+            </article>
+
+            <article class="service-card service-card--featured reveal">
+              <span class="service-card__tag">Más popular</span>
+              <div class="service-card__icon" aria-hidden="true">👑</div>
+              <h3 class="service-card__title">Pack Black</h3>
+              <p class="service-card__desc">
+                Corte + barba + toalla caliente. La experiencia completa.
+              </p>
+              <p class="service-card__price">28 €</p>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card__icon" aria-hidden="true">💎</div>
+              <h3 class="service-card__title">Tratamiento facial</h3>
+              <p class="service-card__desc">
+                Limpieza e hidratación facial con mascarilla negra.
+              </p>
+              <p class="service-card__price">15 €</p>
+            </article>
+          </div>
+
+          <div class="services__cta reveal">
+            <a href="#cita" class="btn btn--gold">Reservar ahora</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== GALERÍA ===================== -->
+      <section class="gallery section" id="galeria">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__eyebrow">Galería</p>
+            <h2 class="section__title">Nuestro <em>trabajo</em></h2>
+            <p class="section__subtitle">Cada corte cuenta una historia.</p>
+          </div>
+
+          <div class="gallery__grid">
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
+                alt="Corte de pelo con degradado"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
+                alt="Barbero arreglando la barba a un cliente"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=800&q=80"
+                alt="Herramientas de barbería sobre la mesa"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80"
+                alt="Cliente recibiendo un corte de pelo"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+                alt="Barbero trabajando con máquina"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery__item reveal">
+              <img
+                src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
+                alt="Ambiente de la barbería"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <!-- Visor ampliado de imágenes (lo controlará JavaScript) -->
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+          <button
+            class="lightbox__close"
+            id="lightbox-close"
+            aria-label="Cerrar imagen"
+          >
+            &times;
+          </button>
+          <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+        </div>
+      </section>
+
+      <!-- ===================== HORARIOS ===================== -->
+      <section class="hours section section--dark" id="horarios">
+        <div class="container hours__grid">
+          <div class="hours__intro reveal">
+            <p class="section__eyebrow">Horarios</p>
+            <h2 class="section__title">Cuándo <em>visitarnos</em></h2>
+            <p>
+              Trabajamos con cita previa para que no pierdas ni un minuto. Aun
+              así, siempre intentamos hacerte un hueco.
+            </p>
+            <p class="hours__status" id="open-status" aria-live="polite"></p>
+          </div>
+
+          <div class="hours__table-wrap reveal">
+            <table class="hours__table">
+              <caption class="sr-only">
+                Horario de apertura de BLACK BARBER
+              </caption>
+              <tbody>
+                <tr data-day="1">
+                  <th scope="row">Lunes</th>
+                  <td>Cerrado</td>
+                </tr>
+                <tr data-day="2">
+                  <th scope="row">Martes</th>
+                  <td>10:00 – 20:00</td>
+                </tr>
+                <tr data-day="3">
+                  <th scope="row">Miércoles</th>
+                  <td>10:00 – 20:00</td>
+                </tr>
+                <tr data-day="4">
+                  <th scope="row">Jueves</th>
+                  <td>10:00 – 20:00</td>
+                </tr>
+                <tr data-day="5">
+                  <th scope="row">Viernes</th>
+                  <td>10:00 – 21:00</td>
+                </tr>
+                <tr data-day="6">
+                  <th scope="row">Sábado</th>
+                  <td>09:00 – 21:00</td>
+                </tr>
+                <tr data-day="0">
+                  <th scope="row">Domingo</th>
+                  <td>Cerrado</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SOLICITAR CITA ===================== -->
+      <section class="booking section" id="cita">
+        <div class="container booking__inner">
+          <div class="section__header reveal">
+            <p class="section__eyebrow">Reserva</p>
+            <h2 class="section__title">Solicita tu <em>cita</em></h2>
+            <p class="section__subtitle">
+              Rellena el formulario y te confirmaremos la reserva.
+            </p>
+          </div>
+
+          <form class="booking__form reveal" id="booking-form" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+                <small class="form__error" aria-live="polite"></small>
+              </div>
+              <div class="form__group">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="600 000 000"
+                  required
+                />
+                <small class="form__error" aria-live="polite"></small>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="servicio">Servicio</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="">Selecciona un servicio</option>
+                  <option>Corte clásico – 15 €</option>
+                  <option>Degradado (fade) – 18 €</option>
+                  <option>Arreglo de barba – 12 €</option>
+                  <option>Afeitado con navaja – 20 €</option>
+                  <option>Pack Black – 28 €</option>
+                  <option>Tratamiento facial – 15 €</option>
+                </select>
+                <small class="form__error" aria-live="polite"></small>
+              </div>
+              <div class="form__group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required />
+                <small class="form__error" aria-live="polite"></small>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="hora">Hora</label>
+                <select id="hora" name="hora" required>
+                  <option value="">Selecciona una hora</option>
+                </select>
+                <small class="form__error" aria-live="polite"></small>
+              </div>
+              <div class="form__group">
+                <label for="mensaje">Comentarios (opcional)</label>
+                <input
+                  type="text"
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="¿Algo que debamos saber?"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--gold btn--block">
+              Solicitar cita
+            </button>
+            <p
+              class="form__success"
+              id="form-success"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACTO ===================== -->
+      <section class="contact section section--dark" id="contacto">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__eyebrow">Contacto</p>
+            <h2 class="section__title">Ven a <em>vernos</em></h2>
+          </div>
+
+          <div class="contact__grid">
+            <ul class="contact__list reveal">
+              <li class="contact__item">
+                <span class="contact__icon" aria-hidden="true">📍</span>
+                <div>
+                  <h3>Dirección</h3>
+                  <p>Calle Ficticia, 123<br />04001 Almería, España</p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon" aria-hidden="true">📞</span>
+                <div>
+                  <h3>Teléfono</h3>
+                  <p><a href="tel:+34600000000">+34 600 000 000</a></p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon" aria-hidden="true">✉️</span>
+                <div>
+                  <h3>Email</h3>
+                  <p>
+                    <a href="mailto:info@blackbarber.example"
+                      >info@blackbarber.example</a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon" aria-hidden="true">📸</span>
+                <div>
+                  <h3>Redes sociales</h3>
+                  <p class="contact__social">
+                    <a href="#" aria-label="Instagram de BLACK BARBER"
+                      >Instagram</a
+                    >
+                    ·
+                    <a href="#" aria-label="Facebook de BLACK BARBER"
+                      >Facebook</a
+                    >
+                    ·
+                    <a href="#" aria-label="TikTok de BLACK BARBER">TikTok</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Espacio reservado para un mapa (se puede sustituir por un iframe de Google Maps) -->
+            <div
+              class="contact__map reveal"
+              role="img"
+              aria-label="Ubicación de BLACK BARBER"
+            >
+              <div class="contact__map-placeholder">
+                <span aria-hidden="true">📍</span>
+                <p>Aquí irá el mapa de la barbería</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== PIE DE PÁGINA ===================== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#inicio" class="logo logo--footer"
+          >BLACK <span>BARBER</span></a
+        >
+        <p class="footer__text">Tradición, precisión y estilo.</p>
+        <p class="footer__copy">
+          &copy; <span id="year">2026</span> BLACK BARBER. Todos los derechos
+          reservados. Sitio web ficticio con fines demostrativos.
         </p>
-        <div class="hero__actions">
-          <a href="#cita" class="btn btn--gold">Solicitar cita</a>
-          <a href="#servicios" class="btn btn--outline">Ver servicios</a>
-        </div>
       </div>
+    </footer>
 
-      <a href="#nosotros" class="hero__scroll" aria-label="Desplazarse hacia abajo">
-        <span></span>
-      </a>
-    </section>
+    <!-- Botón flotante de cita (visible en móvil) -->
+    <a
+      href="#cita"
+      class="floating-cta btn btn--gold"
+      aria-label="Solicitar cita"
+      >Pedir cita</a
+    >
 
-    <!-- ===================== PRESENTACIÓN ===================== -->
-    <section class="about section" id="nosotros">
-      <div class="container about__grid">
-        <div class="about__media reveal">
-          <img
-            src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
-            alt="Interior de la barbería BLACK BARBER"
-            loading="lazy">
-          <div class="about__badge">
-            <strong>12+</strong>
-            <span>años de experiencia</span>
-          </div>
-        </div>
+    <!-- Botón para volver arriba -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+      ↑
+    </button>
 
-        <div class="about__content reveal">
-          <p class="section__eyebrow">Sobre nosotros</p>
-          <h2 class="section__title">Más que una barbería, <em>un ritual</em></h2>
-          <p>
-            En BLACK BARBER combinamos la técnica de la barbería clásica con las
-            tendencias más actuales. Cada visita es una experiencia pensada para
-            que salgas con la mejor versión de ti mismo.
-          </p>
-          <p>
-            Nuestro equipo de barberos profesionales trabaja con productos
-            premium y herramientas de máxima precisión, en un ambiente
-            exclusivo donde el tiempo se detiene.
-          </p>
-
-          <ul class="about__stats">
-            <li><strong>5.000+</strong><span>clientes satisfechos</span></li>
-            <li><strong>4</strong><span>maestros barberos</span></li>
-            <li><strong>100%</strong><span>productos premium</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SERVICIOS Y PRECIOS ===================== -->
-    <section class="services section section--dark" id="servicios">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Servicios y precios</p>
-          <h2 class="section__title">Elige tu <em>experiencia</em></h2>
-          <p class="section__subtitle">Precios claros, calidad sin concesiones.</p>
-        </div>
-
-        <div class="services__grid">
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">✂</div>
-            <h3 class="service-card__title">Corte clásico</h3>
-            <p class="service-card__desc">Corte a tijera o máquina, lavado y peinado final.</p>
-            <p class="service-card__price">15 €</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">✂</div>
-            <h3 class="service-card__title">Degradado (fade)</h3>
-            <p class="service-card__desc">Degradado de precisión con acabado perfilado.</p>
-            <p class="service-card__price">18 €</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">🧔</div>
-            <h3 class="service-card__title">Arreglo de barba</h3>
-            <p class="service-card__desc">Perfilado, recorte y cuidado con aceites premium.</p>
-            <p class="service-card__price">12 €</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">🪒</div>
-            <h3 class="service-card__title">Afeitado con navaja</h3>
-            <p class="service-card__desc">Afeitado tradicional con toalla caliente y bálsamo.</p>
-            <p class="service-card__price">20 €</p>
-          </article>
-
-          <article class="service-card service-card--featured reveal">
-            <span class="service-card__tag">Más popular</span>
-            <div class="service-card__icon" aria-hidden="true">👑</div>
-            <h3 class="service-card__title">Pack Black</h3>
-            <p class="service-card__desc">Corte + barba + toalla caliente. La experiencia completa.</p>
-            <p class="service-card__price">28 €</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">💎</div>
-            <h3 class="service-card__title">Tratamiento facial</h3>
-            <p class="service-card__desc">Limpieza e hidratación facial con mascarilla negra.</p>
-            <p class="service-card__price">15 €</p>
-          </article>
-
-        </div>
-
-        <div class="services__cta reveal">
-          <a href="#cita" class="btn btn--gold">Reservar ahora</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== GALERÍA ===================== -->
-    <section class="gallery section" id="galeria">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Galería</p>
-          <h2 class="section__title">Nuestro <em>trabajo</em></h2>
-          <p class="section__subtitle">Cada corte cuenta una historia.</p>
-        </div>
-
-        <div class="gallery__grid">
-          <figure class="gallery__item reveal">
-            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Corte de pelo con degradado" loading="lazy">
-          </figure>
-          <figure class="gallery__item reveal">
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Barbero arreglando la barba a un cliente" loading="lazy">
-          </figure>
-          <figure class="gallery__item reveal">
-            <img src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=800&q=80" alt="Herramientas de barbería sobre la mesa" loading="lazy">
-          </figure>
-          <figure class="gallery__item reveal">
-            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80" alt="Cliente recibiendo un corte de pelo" loading="lazy">
-          </figure>
-          <figure class="gallery__item reveal">
-            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Barbero trabajando con máquina" loading="lazy">
-          </figure>
-          <figure class="gallery__item reveal">
-            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Ambiente de la barbería" loading="lazy">
-          </figure>
-        </div>
-      </div>
-
-      <!-- Visor ampliado de imágenes (lo controlará JavaScript) -->
-      <div class="lightbox" id="lightbox" aria-hidden="true">
-        <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar imagen">&times;</button>
-        <img class="lightbox__img" id="lightbox-img" src="" alt="">
-      </div>
-    </section>
-
-    <!-- ===================== HORARIOS ===================== -->
-    <section class="hours section section--dark" id="horarios">
-      <div class="container hours__grid">
-        <div class="hours__intro reveal">
-          <p class="section__eyebrow">Horarios</p>
-          <h2 class="section__title">Cuándo <em>visitarnos</em></h2>
-          <p>
-            Trabajamos con cita previa para que no pierdas ni un minuto.
-            Aun así, siempre intentamos hacerte un hueco.
-          </p>
-          <p class="hours__status" id="open-status" aria-live="polite"></p>
-        </div>
-
-        <div class="hours__table-wrap reveal">
-          <table class="hours__table">
-            <caption class="sr-only">Horario de apertura de BLACK BARBER</caption>
-            <tbody>
-              <tr data-day="1"><th scope="row">Lunes</th><td>Cerrado</td></tr>
-              <tr data-day="2"><th scope="row">Martes</th><td>10:00 – 20:00</td></tr>
-              <tr data-day="3"><th scope="row">Miércoles</th><td>10:00 – 20:00</td></tr>
-              <tr data-day="4"><th scope="row">Jueves</th><td>10:00 – 20:00</td></tr>
-              <tr data-day="5"><th scope="row">Viernes</th><td>10:00 – 21:00</td></tr>
-              <tr data-day="6"><th scope="row">Sábado</th><td>09:00 – 21:00</td></tr>
-              <tr data-day="0"><th scope="row">Domingo</th><td>Cerrado</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SOLICITAR CITA ===================== -->
-    <section class="booking section" id="cita">
-      <div class="container booking__inner">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Reserva</p>
-          <h2 class="section__title">Solicita tu <em>cita</em></h2>
-          <p class="section__subtitle">Rellena el formulario y te confirmaremos la reserva.</p>
-        </div>
-
-        <form class="booking__form reveal" id="booking-form" novalidate>
-          <div class="form__row">
-            <div class="form__group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-              <small class="form__error" aria-live="polite"></small>
-            </div>
-            <div class="form__group">
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" required>
-              <small class="form__error" aria-live="polite"></small>
-            </div>
-          </div>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label for="servicio">Servicio</label>
-              <select id="servicio" name="servicio" required>
-                <option value="">Selecciona un servicio</option>
-                <option>Corte clásico – 15 €</option>
-                <option>Degradado (fade) – 18 €</option>
-                <option>Arreglo de barba – 12 €</option>
-                <option>Afeitado con navaja – 20 €</option>
-                <option>Pack Black – 28 €</option>
-                <option>Tratamiento facial – 15 €</option>
-              </select>
-              <small class="form__error" aria-live="polite"></small>
-            </div>
-            <div class="form__group">
-              <label for="fecha">Fecha</label>
-              <input type="date" id="fecha" name="fecha" required>
-              <small class="form__error" aria-live="polite"></small>
-            </div>
-          </div>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label for="hora">Hora</label>
-              <select id="hora" name="hora" required>
-                <option value="">Selecciona una hora</option>
-              </select>
-              <small class="form__error" aria-live="polite"></small>
-            </div>
-            <div class="form__group">
-              <label for="mensaje">Comentarios (opcional)</label>
-              <input type="text" id="mensaje" name="mensaje" placeholder="¿Algo que debamos saber?">
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn--gold btn--block">Solicitar cita</button>
-          <p class="form__success" id="form-success" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <!-- ===================== CONTACTO ===================== -->
-    <section class="contact section section--dark" id="contacto">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Contacto</p>
-          <h2 class="section__title">Ven a <em>vernos</em></h2>
-        </div>
-
-        <div class="contact__grid">
-          <ul class="contact__list reveal">
-            <li class="contact__item">
-              <span class="contact__icon" aria-hidden="true">📍</span>
-              <div>
-                <h3>Dirección</h3>
-                <p>Calle Ficticia, 123<br>04001 Almería, España</p>
-              </div>
-            </li>
-            <li class="contact__item">
-              <span class="contact__icon" aria-hidden="true">📞</span>
-              <div>
-                <h3>Teléfono</h3>
-                <p><a href="tel:+34600000000">+34 600 000 000</a></p>
-              </div>
-            </li>
-            <li class="contact__item">
-              <span class="contact__icon" aria-hidden="true">✉️</span>
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:info@blackbarber.example">info@blackbarber.example</a></p>
-              </div>
-            </li>
-            <li class="contact__item">
-              <span class="contact__icon" aria-hidden="true">📸</span>
-              <div>
-                <h3>Redes sociales</h3>
-                <p class="contact__social">
-                  <a href="#" aria-label="Instagram de BLACK BARBER">Instagram</a> ·
-                  <a href="#" aria-label="Facebook de BLACK BARBER">Facebook</a> ·
-                  <a href="#" aria-label="TikTok de BLACK BARBER">TikTok</a>
-                </p>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Espacio reservado para un mapa (se puede sustituir por un iframe de Google Maps) -->
-          <div class="contact__map reveal" role="img" aria-label="Ubicación de BLACK BARBER">
-            <div class="contact__map-placeholder">
-              <span aria-hidden="true">📍</span>
-              <p>Aquí irá el mapa de la barbería</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ===================== PIE DE PÁGINA ===================== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#inicio" class="logo logo--footer">BLACK <span>BARBER</span></a>
-      <p class="footer__text">Tradición, precisión y estilo.</p>
-      <p class="footer__copy">&copy; <span id="year">2026</span> BLACK BARBER. Todos los derechos reservados. Sitio web ficticio con fines demostrativos.</p>
-    </div>
-  </footer>
-
-  <!-- Botón flotante de cita (visible en móvil) -->
-  <a href="#cita" class="floating-cta btn btn--gold" aria-label="Solicitar cita">Pedir cita</a>
-
-  <!-- Botón para volver arriba -->
-  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">↑</button>
-
-  <!-- JavaScript (se creará en el último paso) -->
-  <script src="js/script.js"></script>
-</body>
+    <!-- JavaScript (se creará en el último paso) -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
